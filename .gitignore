@@ -1,6 +1,7 @@
 node_modules
 config.*.json
 *.pem
-connect/config/keys/*
-nginx/certs/*
-redis/data/*
+connect/config/keys/*.pem
+nginx/certs/*.crt
+nginx/certs/*.key
+redis/data/*.rdb

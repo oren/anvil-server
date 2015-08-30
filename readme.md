@@ -87,6 +87,7 @@ writing new private key to '/home/oren/projects/myauthserver/nginx/certs/nginx.k
    create redis/Dockerfile
 Connect all the things :)
 ```
+
 ```
 docker-compose up
 ```
