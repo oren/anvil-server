@@ -1,7 +1,8 @@
 # anvil-server
 
 ```
-sudo npm install -g anvil-connect-cli
+sudo npm install anvil-connect-cli -g
+sudo npm install anvil-connect -g
 
 > spawn-sync@1.0.13 postinstall /usr/lib/node_modules/anvil-connect-cli/node_modules/yeoman-generator/node_modules/cross-spawn/node_modules/spawn-sync
 > node postinstall
@@ -103,4 +104,17 @@ Add to .gitignore
 connect/config/keys/*
 nginx/certs/*
 redis/data/*
+```
+
+Register a client
+```
+docker exec -it anvilserver_connect_1 sh
+npm install anvil-connect -g
+nv add client '{
+  "client_name": "Example App",
+  "default_max_age": 36000,
+  "redirect_uris": ["https://app.example.com/callback.html"],
+  "post_logout_redirect_uris": ["https://app.example.com"],
+  "trusted": "true"
+}'
 ```
