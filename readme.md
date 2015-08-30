@@ -93,7 +93,8 @@ docker-compose up
 ```
 
 ```
-curl https://localhost -k
+sudo sh -c "echo '127.0.0.1 connect.example.com' >> /etc/hosts"
+curl https://connect.example.com -k
 {"Anvil Connect":"Welcome","issuer":"https://connect.example.com","version":"0.1.50"}
 ```
 

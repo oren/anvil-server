@@ -5,3 +5,4 @@ connect/config/keys/*.pem
 nginx/certs/*.crt
 nginx/certs/*.key
 redis/data/*.rdb
+nginx/logs/*.log
