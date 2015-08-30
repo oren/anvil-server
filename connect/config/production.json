@@ -1,0 +1,20 @@
+{
+  "issuer": "https://connect.example.com",
+  "client_registration": "scoped",
+  "cookie_secret": "0bb2f85c7f362a0dfeb4",
+  "session_secret": "272af7c8031a2136bef9",
+  "providers": {
+    "password": true,
+    "google": {
+      "client_id": "ID",
+      "client_secret": "SECRET",
+      "scope": [
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/userinfo.email"
+      ]
+    }
+  },
+  "redis": {
+    "url": "redis://redis:6379"
+  }
+}

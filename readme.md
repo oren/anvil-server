@@ -95,3 +95,10 @@ docker-compose up
 curl https://localhost -k
 {"Anvil Connect":"Welcome","issuer":"https://connect.example.com","version":"0.1.50"}
 ```
+
+Add to .gitignore
+```
+connect/config/keys/*
+nginx/certs/*
+redis/data/*
+```
